@@ -8,7 +8,7 @@ class LoginPage
   def with(email, pass)
     find("input[name=email]").set email
     find("input[name=password]").set pass
-    find("a[name="btnEntrar"]").click
+    click_button "Entrar"
   end
 
   def alert
